@@ -22,7 +22,7 @@ class ProjectViewController: BaseViewController {
     
     override func navDesign() {
         self.navigationItem.title = "Projects"
-        
+        self.navigationController?.navigationBar.prefersLargeTitles = true
         let searchController = UISearchController(searchResultsController: nil)
         searchController.searchBar.placeholder = "Search project"
         searchController.obscuresBackgroundDuringPresentation = false

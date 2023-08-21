@@ -13,7 +13,6 @@ class BaseViewController: UIViewController {
         super.viewDidLoad()
 
         view.backgroundColor = .white
-        self.navigationController?.navigationBar.prefersLargeTitles = true
         configure()
         setConstraints()
         navDesign()
