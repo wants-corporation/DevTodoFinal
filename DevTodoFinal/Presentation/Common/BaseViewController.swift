@@ -13,7 +13,6 @@ class BaseViewController: UIViewController {
         super.viewDidLoad()
 
         view.backgroundColor = .white
-        self.navigationController?.navigationBar.prefersLargeTitles = true
         configure()
         setConstraints()
         navDesign()
@@ -22,6 +21,8 @@ class BaseViewController: UIViewController {
 
     func configure() { }
     func setConstraints() { }
-    func navDesign() {}
+    func navDesign() {
+        //self.navigationController?.navigationBar.tintColor = .white
+    }
 
 }

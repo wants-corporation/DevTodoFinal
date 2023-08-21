@@ -9,21 +9,32 @@ import UIKit
 
 class AddProjectViewController: BaseViewController {
 
+    let mainView = AddProjectView()
+    override func loadView() {
+        self.view = mainView
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        mainView.backgroundColor = Assets.Color.grey.color
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    override func navDesign() {
+        let backButton = UIBarButtonItem(image: Assets.Icon.arrow.image, style: .plain, target: self, action: #selector(backButtonTapped))
+        let submitButton = UIBarButtonItem(title: "Submit", style: .done, target: self, action: #selector(submitButtonTapped))
+        submitButton.tintColor = Assets.Color.green.color
+        self.navigationItem.leftBarButtonItem = backButton
+        self.navigationItem.rightBarButtonItem = submitButton
+        self.navigationController?.navigationBar.barTintColor = .white
     }
-    */
+   
+    @objc func backButtonTapped() {
+        
+    }
+    
+    @objc func submitButtonTapped() {
+        
+    }
 
 }

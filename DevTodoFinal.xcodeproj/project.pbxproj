@@ -30,6 +30,8 @@
 		9EB963442A936DFD003C9C32 /* TabbarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EB963432A936DFD003C9C32 /* TabbarController.swift */; };
 		9EB963492A936E92003C9C32 /* DiaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EB963482A936E92003C9C32 /* DiaryViewController.swift */; };
 		9EB963522A936ED1003C9C32 /* DailyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EB963512A936ED1003C9C32 /* DailyViewController.swift */; };
+		9EB963562A937BB6003C9C32 /* PlusCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EB963552A937BB6003C9C32 /* PlusCoordinator.swift */; };
+		9EB963582A938081003C9C32 /* AddProjectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EB963572A938080003C9C32 /* AddProjectView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -53,6 +55,8 @@
 		9EB963432A936DFD003C9C32 /* TabbarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarController.swift; sourceTree = "<group>"; };
 		9EB963482A936E92003C9C32 /* DiaryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaryViewController.swift; sourceTree = "<group>"; };
 		9EB963512A936ED1003C9C32 /* DailyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyViewController.swift; sourceTree = "<group>"; };
+		9EB963552A937BB6003C9C32 /* PlusCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlusCoordinator.swift; sourceTree = "<group>"; };
+		9EB963572A938080003C9C32 /* AddProjectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddProjectView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -191,6 +195,7 @@
 		9E748CA52A8A231900809EC1 /* Coordinator */ = {
 			isa = PBXGroup;
 			children = (
+				9EB963552A937BB6003C9C32 /* PlusCoordinator.swift */,
 			);
 			path = Coordinator;
 			sourceTree = "<group>";
@@ -216,6 +221,7 @@
 			isa = PBXGroup;
 			children = (
 				9EB9632E2A93333D003C9C32 /* AddProjectViewController.swift */,
+				9EB963572A938080003C9C32 /* AddProjectView.swift */,
 			);
 			path = AddProject;
 			sourceTree = "<group>";
@@ -424,10 +430,12 @@
 				9EB9632F2A93333E003C9C32 /* AddProjectViewController.swift in Sources */,
 				9E748CAC2A8A236400809EC1 /* ProjectViewController.swift in Sources */,
 				9EB963442A936DFD003C9C32 /* TabbarController.swift in Sources */,
+				9EB963582A938081003C9C32 /* AddProjectView.swift in Sources */,
 				9EB963372A933956003C9C32 /* XCAssets+SwiftGen.swift in Sources */,
 				9E748CB22A8A239500809EC1 /* BaseViewController.swift in Sources */,
 				9E748C892A86027200809EC1 /* AppDelegate.swift in Sources */,
 				9EB9633B2A933EF2003C9C32 /* BaseCollectionViewCell.swift in Sources */,
+				9EB963562A937BB6003C9C32 /* PlusCoordinator.swift in Sources */,
 				9EB9633E2A936739003C9C32 /* Coordinator.swift in Sources */,
 				9EB963392A933EE7003C9C32 /* ProjectCollectionViewCell.swift in Sources */,
 				9EB963492A936E92003C9C32 /* DiaryViewController.swift in Sources */,
