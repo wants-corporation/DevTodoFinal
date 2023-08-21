@@ -20,7 +20,31 @@ class ProjectViewController: BaseViewController {
         
     }
     
+    override func navDesign() {
+        self.navigationItem.title = "Projects"
+        
+        let searchController = UISearchController(searchResultsController: nil)
+        searchController.searchBar.placeholder = "Search project"
+        searchController.obscuresBackgroundDuringPresentation = false
+        searchController.searchResultsUpdater = self
+        let plusButton = UIBarButtonItem(image: UIImage(named: "addsquare"), style: .plain, target: self, action: #selector(plusButtonTapped))
+        self.navigationItem.setRightBarButton(plusButton, animated: true)
+        self.navigationItem.rightBarButtonItem?.tintColor = Assets.Color.green.color
+        self.navigationItem.searchController = searchController
+    }
 
    
+    @objc func plusButtonTapped() {
+        self.navigationController?.pushViewController(AddProjectViewController(), animated: true)
+    }
 
+}
+
+extension ProjectViewController : UISearchResultsUpdating {
+    
+    func updateSearchResults(for searchController: UISearchController) {
+        guard let text = searchController.searchBar.text else { return }
+        print(text)
+    }
+ 
 }
