@@ -17,7 +17,7 @@ class AddProjectViewController: BaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        
+        mainView.backgroundColor = Assets.Color.grey.color
     }
     
     override func navDesign() {
@@ -26,7 +26,7 @@ class AddProjectViewController: BaseViewController {
         submitButton.tintColor = Assets.Color.green.color
         self.navigationItem.leftBarButtonItem = backButton
         self.navigationItem.rightBarButtonItem = submitButton
-        self.navigationController?.navigationBar.tintColor = .white
+        self.navigationController?.navigationBar.barTintColor = .white
     }
    
     @objc func backButtonTapped() {

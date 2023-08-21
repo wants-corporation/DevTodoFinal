@@ -21,6 +21,8 @@ class BaseViewController: UIViewController {
 
     func configure() { }
     func setConstraints() { }
-    func navDesign() {}
+    func navDesign() {
+        //self.navigationController?.navigationBar.tintColor = .white
+    }
 
 }
