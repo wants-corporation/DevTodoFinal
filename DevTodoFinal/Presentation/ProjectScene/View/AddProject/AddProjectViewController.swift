@@ -27,6 +27,13 @@ class AddProjectViewController: BaseViewController {
         self.navigationItem.leftBarButtonItem = backButton
         self.navigationItem.rightBarButtonItem = submitButton
         self.navigationController?.navigationBar.barTintColor = .white
+        self.navigationController?.navigationBar.prefersLargeTitles = false
+        
+        let navigationBarAppearance = UINavigationBarAppearance()
+        navigationBarAppearance.configureWithDefaultBackground()
+        navigationItem.scrollEdgeAppearance = navigationBarAppearance
+        navigationItem.standardAppearance = navigationBarAppearance
+        navigationItem.compactAppearance = navigationBarAppearance
     }
    
     @objc func backButtonTapped() {
